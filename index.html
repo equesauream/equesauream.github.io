@@ -16,10 +16,10 @@
         }
     </style>
 </head>
-<body class="antialiased min-h-screen flex flex-col items-center justify-center p-4">
+<body class="antialiased min-h-screen p-4">
 
-    <!-- Main Container -->
-    <div class="bg-white rounded-xl shadow-2xl p-8 max-w-lg w-full transform transition-all duration-300 hover:scale-105">
+    <!-- Main Content Wrapper -->
+    <div class="bg-white rounded-xl shadow-md p-8 max-w-4xl mx-auto my-8">
 
         <!-- Header Section -->
         <header class="text-center mb-8">
@@ -57,11 +57,11 @@
             'about': {
                 title: 'About Me',
                 content: `
-                    <p class="text-gray-700 leading-relaxed mb-4">
+                    <div class="flex flex-col items-center mb-6">
+                        <img id="profile-picture" class="w-32 h-32 rounded-full object-cover mb-4" src="https://placehold.co/128x128/9CA3AF/FFFFFF?text=Your+Photo" alt="Profile Picture">
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mt-4">
                         Hello! I am a passionate mathematics student with a strong focus on applied mathematics and its real-world applications. I believe in the power of mathematical models to solve complex problems and contribute to scientific advancement.
-                    </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        I am currently pursuing my degree and am always looking for opportunities to apply my skills and knowledge to new challenges.
                     </p>
                 `
             },
@@ -131,7 +131,6 @@
 
         // Set initial page to 'about'
         document.getElementById('about-btn').click();
-
     </script>
 </body>
 </html>
